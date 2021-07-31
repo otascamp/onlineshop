@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OTAS Shop</title>
+
+    <!-- Bootstrap css1 js2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--    fontawesome css1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav my-3">
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Shortcuts</a>
+            </li>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Start Nav Bar -->
+
+    <nav class="navbar navbar-expand fixed-top">
+        <div class="navbar-collapse justify-content-between">
+
+            <!-- side bar button -->
+            <a href="#menu-toggle" class="btn btn-lg text-light mx-3" id="menu-toggle">OTAS</a>
+
+            <!-- nav menu -->
+            <ul class="navbar-nav p-3">
+                <!-- <li class="nav-item"><a class="nav-link fw-bold text-light text-uppercase mx-3" href="#">Icon</a></li> -->
+                <li class="nav-item"><a class="nav-link fw-bold text-light text-uppercase 3" href="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold text-light text-uppercase mx-3" href="#">Orderlist</a>
+                </li>
+                <li class="nav-item"><a class="nav-link fw-bold text-light text-uppercase mx-3" href="#">Customer
+                    Care</a></li>
+                <li class="nav-item dropdown"><a class="nav-link fw-bold text-light text-uppercase mx-3 dropdown-toggle"
+                                                 data-bs-toggle="dropdown" href="#">Language</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Myanmar</li>
+                        <li class="dropdown-item">English</li>
+                        <li class="dropdown-item">Chinese</li>
+                        <li class="dropdown-item">Japanese</li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link fw-bold text-light text-uppercase mx-3" href="#">Contact Us</a>
+                </li><li class="nav-item"><a class="nav-link fw-bold text-light text-uppercase mx-3" href="#">Help Center</a>
+                </li>
+            </ul>
+
+
+            <!-- search-bar -->
+            <form class="px-3" action="" method="">
+                <div class="input-group mx-1">
+                    <input type="text" name="search" id="search" class="form-control form-control-sm"
+                           placeholder="Search...">
+                    <span class="input-group-text rounded-0"><i class="fas fa-search"></i></span>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!-- End Nav Bar -->
+    <div class="marquee">
+        <div class="row">
+            <marquee class="col-10 bg-warning text-dark text-uppercase fw-light" direction="left">
+                <span class="mx-5">Stay at home</span>
+                <span class="mx-5">Minimize interactions</span>
+                <span class="mx-5">Avoid closed spaces and crowded places</span>
+                <span class="mx-5">Wear a non-medical mask</span>
+                <span class="mx-5">Practise hand hygiene and respiratory etiquette</span>
+            </marquee>
+            <a class="col-2 btn btn-primary rounded-0"
+               href="https://www.mohs.gov.mm/Main/content/publication/2019-ncov">Covid 19 Update</a>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="col-md-12 img">
+            <div class="card">
+                <div class="promotime">
+                    <div class="countdowntime">
+                        <h1>Promotion time to start</h1>
+                        <div id="countdown" class="countdown">
+
+                            <div class="time">
+                                <h2 id="days">00</h2>
+                                <small>days</small>
+                            </div>
+
+                            <div class="time">
+                                <h2 id="hours">00</h2>
+                                <small>hours</small>
+                            </div>
+
+                            <div class="time">
+                                <h2 id="minutes">00</h2>
+                                <small>minutes</small>
+                            </div>
+
+                            <div class="time">
+                                <h2 id="seconds">00</h2>
+                                <small>seconds</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <img src="https://www.monsterinsights.com/wp-content/uploads/2019/11/breathtaking-online-shopping-statistics-you-never-knew.png"
+                     height="400px" class="p2">
+                <img src="https://www.lux-review.com/wp-content/uploads/2020/12/grocery-shopping.jpg" height="400px"
+                     class="p3">
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /#wrapper -->
+
+
+<!-- Bootstrap css1 js2  -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+<!-- Jquery js1 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+<script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
