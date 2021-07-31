@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Sigmar+One&display=swap');
+
+body {
+    overflow-x: hidden;
+    background-color:#e1e3a9;
+}
+
+nav{
+    background-color:#16214d;
+    /*position: -ms-device-fixed;*/
+}
+
+.marquee{
+    margin-top: 90px;
+}
+
+marquee{
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: fixed;
+    left: 250px;
+    top: 80px;
+
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+
+    overflow-y: auto;
+    background: #16214d;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+}
+/*ad style*/
+.img{
+    overflow: hidden;
+}
+
+.card{
+    position: relative;
+
+    animation-name: myani;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*start countdown style*/
+.promotime{
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Sigmar One', cursive;
+    width: 100%;
+    height: 450px;
+    background-image: url("https://wpengine-myanmore.s3.amazonaws.com/uploads/2020/04/parcel-paper-cartons-with-shopping-cart-logo-trolley-laptop-keyboard_9635-3215.jpg");
+    background-size: cover;
+    color: #fff;
+    letter-spacing: 7px;
+    text-shadow: 0px 10px 5px #16214d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.promotime::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.promotime .countdowntime{
+    position: absolute;
+}
+
+.promotime .countdown{
+    display: flex;
+    justify-content: center;
+}
+
+.countdown .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.countdown h2{
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: -5px;
+}
+/*end countdown style*/
+
+.card .p2{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+}
+
+.card .p3{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 200%;
+}
+
+@keyframes myani{
+    0%,30%{
+        right: 0%;
+    }
+
+    40%,50%{
+        right: 100%;
+    }
+
+    60%,70%{
+        right: 200%;
+    }
+
+    80%,90%{
+        right: 100%;
+    }
+
+    100%{
+        right: 0;
+    }
+}
+
