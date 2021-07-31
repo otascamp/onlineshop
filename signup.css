@@ -1,0 +1,127 @@
+:root{
+	--bgcolor: #e1e3a9;
+    --navcolor: #16214d;
+    --sbox: #dfe0af;
+}
+body{
+	font-family: sans-serif;
+	background-color: var(--bgcolor);
+	
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.container{
+	width: 400px;
+}
+fieldset{
+	border-radius: 10px;
+}
+
+.input1{
+	margin-bottom: 20px;
+}
+
+
+.input1 label{
+	display: block;
+	color: #000;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.input1 input{
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	border: 3px solid #f0f0f0;
+	border-radius: 5px;
+	padding: 10px;
+	
+
+} 
+.input1 input:focus{
+	outline: 0;
+	border-color: #777;
+}
+i{
+	padding: 10px;
+}
+
+.tap{
+	width: 100%;
+	background-color: var(--navcolor);
+	color: #fff;
+	font-size: 16px;
+    padding: 5px;
+    border: 3px solid #000;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;  
+    text-transform: uppercase;         
+
+}
+.tap:hover{
+	transform: translateY(0px);
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+.tap:active{
+	transform: translateY(-2px);
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+legend{
+	
+	font-size: 25px;
+}
+/*this is the footer part*/
+.help{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #000 ;
+	line-height: 1.6px;
+	margin: 10px 0px 20px;
+	display: block;
+	background-color: var(--bgcolor);
+}
+
+.help span{
+	background: #fff;
+	margin: 0px 10px;
+	background-color: var(--bgcolor);
+
+}
+
+.helpcenter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+
+	transition: all 0.5s;
+}
+.helpcenter:hover{
+	font-size: 25px;
+}
+
+.footer{
+	width: 400px; 
+	background-color: var(--navcolor);
+	color: #fff;
+	border-radius: 10px;
+}
+
+.links {
+	display: flex;
+  	justify-content: space-around;
+  	font-size: 15px;
+
+}
+a{
+	color: #fff;
+}
