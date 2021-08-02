@@ -1,6 +1,6 @@
 // side bar
 $("#menu-toggle").click(function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 });
 
@@ -9,6 +9,9 @@ const days = document.getElementById('days');
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
+
+const loading = document.getElementById("loading");
+const wrapper = document.getElementById("wrapper");
 
 const promotime = new Date("August 05 2021 00:00:00");
 // console.log(promotime);
@@ -42,3 +45,8 @@ function countdowntime(){
 // countdowntime();
 
 setInterval(countdowntime,1000);
+
+setTimeout(function (){
+    loading.remove();
+    wrapper.style.display = "block";
+},3000);
