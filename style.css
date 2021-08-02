@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Sigmar+One&display=swap');
-
+:root{
+    --bgcolor:#e1e3a9;
+    --navcolor:#16214d;
+}
 body {
     overflow-x: hidden;
-    background-color:#e1e3a9;
+    background-color:var(--bgcolor);
 }
 
+.loading{
+    background-color:var(--bgcolor);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading .spinner-border{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 nav{
-    background-color:#16214d;
+    background-color:var(--navcolor);
     /*position: -ms-device-fixed;*/
 }
 
@@ -21,6 +43,9 @@ marquee{
 }
 
 /* Toggle Styles */
+.wrapper{
+    display: none;
+}
 
 #wrapper {
     padding-left: 0;
@@ -80,6 +105,13 @@ marquee{
     background: rgba(255,255,255,0.2);
 }
 
+.sidebar-nav li ul li a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: #16214d;
+    background: rgba(255,255,255,0.2);
+}
+
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
@@ -89,15 +121,6 @@ marquee{
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
 }
 
 @media(min-width:768px) {
@@ -122,7 +145,7 @@ marquee{
     overflow: hidden;
 }
 
-.card{
+.ad .card{
     position: relative;
 
     animation-name: myani;
